@@ -32,15 +32,111 @@ img {
 }
 
 .toolbox-wrapper {
-    height: 8rem;
-    background-color: beige;
+    height: 5rem;
+    background-color: #f4f5f7;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .filter-cont {
-    height: 8rem;
-    width: 30rem;
-    background-color: black;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.action-btn-cont {
+    display: flex;
+    height: 3rem;
+    width: 4rem;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter-color {
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.filter-color,
+.action-btn-cont:hover {
+    cursor: pointer;
+}
+
+.orange {
+    background-color: #ff5630;
+}
+
+.blue {
+    background-color: #00b8d9;
+}
+
+.purple {
+    background-color: #8777d9;
+}
+
+.green {
+    background-color: #36b37e;
+}
+.task-cont {
+    min-height: 40rem;
+    width: 100%;
+    background-color: #f4f5f7;
+    margin-top: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.task-wrapper {
+    /* height: 15rem; */
+    width: calc(25% - 1rem);
+    background-color: #e7e7e7;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    padding: 31px 20px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.task-priority-color {
+    height: 0.5rem;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    border-radius: 21px 23px 0 0;
+}
+
+ .task-name {
+    padding-left: 15px;
+}
+
+.task-name h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.task-description {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 15px;
 }
